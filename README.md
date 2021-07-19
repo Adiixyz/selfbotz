@@ -116,3 +116,7 @@ Install these packages
 | GET |✅|
 | TERM |✅|
 | > (EVAL) |✅|
+
+# THANKS TO
+* [`Baileys`](https://github.com/adiwajshing/Baileys)
+* [`MhankBarBar`](https://github.com/MhankBarBar)
