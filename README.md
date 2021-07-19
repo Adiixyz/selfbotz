@@ -117,7 +117,7 @@ ctrl + c
 | SET REPLY |✅|
 | SPEED |✅|
 | PING |✅|
-| NEOFETCHSPEED |✅|
+| NEOFETCHSPEED ( FOR TERMUX )|✅|
 | RUNTIME |✅|
 | TEST |✅|
 | INSPECT |✅|
