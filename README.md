@@ -31,8 +31,15 @@ Install these packages
 ```
 
 # RUN 
+| TERMUX DAN WINDWOS |✓|
+| ------------- | ------------- |
+| node main.js |✅|
+| node adii.js |✅|
+| npm start |✅|
+
+# CLOSE BOT
 ```bash
-> node main.js
+ctrl + c
 ```
 
 # FEATURES
