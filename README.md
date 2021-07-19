@@ -8,13 +8,15 @@ src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e4
 
 # INSTALLATION ( TERMUX )
 ```bash
-> apt install git
-> apt install bash
+> pkg install git
+> pkg install bash
 > git clone https://github.com/Adiixyz/selfbotz
 > ls
 > cd selfbotz
 > bash install.sh
 ```
+Note : Use *apt* if *pkg* doesn't work
+
 
 # INSTALLATION ( WINDOWS, RDP, VPS )
 Install these packages
@@ -32,3 +34,85 @@ Install these packages
 ```bash
 > node main.js
 ```
+
+# FEATURES
+
+| OWNER |✅|
+| ------------- | ------------- |
+| OFF |✅|
+| ON |✅|
+| STATUS |✅|
+
+| MAKER |✅|
+| ------------- | ------------- |
+| STICKER |✅|
+| STICKER GIF |✅|
+| STICKER WM |✅|
+| TAKE STICKER |✅|
+| FDEFACE |✅|
+
+| CONVERT |✅|
+| ------------- | ------------- |
+| TOIMG |✅|
+| TOMP3 |✅|
+| TOMP4 |✅|
+| SLOW |✅|
+| FAST |✅|
+| REVERSE |✅|
+| TOURL |✅|
+
+| UP STORY WHATSAPP |✅|
+| ------------- | ------------- |
+| UPSWTEXT |✅|
+| UPSWIMAGE |✅|
+| UPSWVIDEO  |✅|
+
+| FUN |✅|
+| ------------- | ------------- |
+| FITNAH |✅|
+| FITNAH PC |✅|
+| KONTAK |✅|
+
+
+| TAG |✅|
+| ------------- | ------------- |
+| STICKTAG |✅|
+| HIDETAG |✅|
+| KONTAG |✅|
+| TOTAG |✅|
+
+| DOWNLOAD |✅|
+| ------------- | ------------- |
+| YTSEARCH |✅|
+| IGSTALK |✅|
+| PLAY |✅|
+| VIDEO |✅|
+| YTMP3 |✅|
+| YTMP4 |✅|
+| IGDL |✅|
+| FBDL |✅|
+| TIKTOKDL |✅|
+| TIKTOK AUDIO |✅|
+| TWITTER |✅|
+| BRAINLY |✅|
+| IMAGE |✅|
+| ANIME |✅|
+
+| OTHER |✅|
+| ------------- | ------------- |
+| SELF |✅|
+| PUBLIC |✅|
+| SET THUMB |✅|
+| SET FAKE IMG |✅|
+| SET TARGET |✅|
+| SET REPLY |✅|
+| SPEED |✅|
+| PING |✅|
+| NEOFETCHSPEED |✅|
+| RUNTIME |✅|
+| TEST |✅|
+| INSPECT |✅|
+| JOIN |✅|
+| GET |✅|
+| TERM |✅|
+| > (EVAL) |✅|
