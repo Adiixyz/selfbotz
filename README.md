@@ -6,21 +6,25 @@
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
+# Next Update :
+No Prefix Feature, Welcome ImageMagick
+Nanti tunggu yaa:v
+
 # PREFIX : # DAN .
 
 # INSTALLATION ( TERMUX )
 ```bash
-> pkg install git
-> pkg install bash
+> pkg install git -y
+> pkg install bash -y
 > git clone https://github.com/Adiixyz/selfbotz
 > ls
 > cd selfbotz
 > bash install.sh
 ```
-Note : Use *apt* if *pkg* doesn't work
+Note : Use *apt*  if *pkg*  doesn't work
 
 
-# INSTALLATION ( WINDOWS, RDP, VPS )
+# INSTALLATION ( WINDWOS, RDP, VPS )
 Install these packages
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
@@ -36,12 +40,16 @@ Install these packages
 | TERMUX DAN WINDWOS |✓|
 | ------------- | ------------- |
 | node main.js |✅|
-| node adii.js |✅|
 | npm start |✅|
 
 # CLOSE BOT
 ```bash
 ctrl + c
+```
+# RUN BACK
+```bash
+> cd selfbotz
+> node main
 ```
 
 # FEATURES
