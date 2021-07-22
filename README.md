@@ -6,15 +6,10 @@
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
-# SC (unrecoded) by 
-* [`MhankBarBar`](https://github.com/MhankBarBar)
+# SC SELFBOT NO APIKEY ( maybe ) :v
 
-
-# Next Update :
-No Prefix Feature, Welcome ImageMagick
-Nanti tunggu yaa:v
-
-# PREFIX : # DAN .
+# PREFIX 
+`#` and `.`
 
 # INSTALLATION ( TERMUX )
 ```cmd
@@ -25,7 +20,7 @@ Nanti tunggu yaa:v
 > cd selfbotz
 > bash install.sh
 ```
-Note : Use *apt*  if *pkg*  doesn't work
+Note : Use `apt`  if `pkg` doesn't work
 
 
 # INSTALLATION ( WINDWOS, RDP, VPS )
