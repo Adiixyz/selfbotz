@@ -40,7 +40,9 @@ Install these packages
 > npm i
 ```
 
-# Simple Install Dependencies ( Windows )
+# Simple Install Packages ( Windows only )
+Run `install.bat`
+Atau ketik di cmd
 ```cmd
 > install.bat
 ```
@@ -63,13 +65,13 @@ ctrl + c
 
 # FEATURES
 
-| OWNER |✅|
+| OWNER |YES?|
 | ------------- | ------------- |
 | OFF |✅|
 | ON |✅|
 | STATUS |✅|
 
-| MAKER |✅|
+| MAKER |YES?|
 | ------------- | ------------- |
 | STICKER |✅|
 | STICKER GIF |✅|
@@ -77,7 +79,7 @@ ctrl + c
 | TAKE STICKER |✅|
 | FDEFACE |✅|
 
-| CONVERT |✅|
+| CONVERT |YES?|
 | ------------- | ------------- |
 | TOIMG |✅|
 | TOMP3 |✅|
@@ -87,31 +89,31 @@ ctrl + c
 | REVERSE |✅|
 | TOURL |✅|
 
-| UP STORY WHATSAPP |✅|
+| UP STORY WHATSAPP |YES?|
 | ------------- | ------------- |
 | UPSWTEXT |✅|
 | UPSWIMAGE |✅|
 | UPSWVIDEO  |✅|
 
-| FUN |✅|
+| FUN |YES?|
 | ------------- | ------------- |
 | FITNAH |✅|
 | FITNAH PC |✅|
 | KONTAK |✅|
 
 
-| TAG |✅|
+| TAG |YES?|
 | ------------- | ------------- |
 | STICKTAG |✅|
 | HIDETAG |✅|
 | KONTAG |✅|
 | TOTAG |✅|
 
-| DOWNLOAD |✅|
+| DOWNLOAD |YES?|
 | ------------- | ------------- |
 | YTSEARCH |✅|
 | IGSTALK |✅|
-| PLAY |✅|
+| PLAY ( maybe unresponsive )|✅|
 | VIDEO |✅|
 | YTMP3 |✅|
 | YTMP4 |✅|
@@ -124,7 +126,7 @@ ctrl + c
 | IMAGE |✅|
 | ANIME |✅|
 
-| OTHER |✅|
+| OTHER |YES?|
 | ------------- | ------------- |
 | SELF |✅|
 | PUBLIC |✅|
