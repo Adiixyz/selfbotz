@@ -17,7 +17,7 @@ Nanti tunggu yaa:v
 # PREFIX : # DAN .
 
 # INSTALLATION ( TERMUX )
-```bash
+```cmd
 > pkg install git -y
 > pkg install bash -y
 > git clone https://github.com/Adiixyz/selfbotz
@@ -34,10 +34,15 @@ Install these packages
 * [Git](https://git-scm.com/downloads)
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
 * [Libwebp](https://developers.google.com/speed/webp/download)
-```bash
+```cmd
 > git clone https://github.com/Adiixyz/selfbotz
 > cd selfbotz
 > npm i
+```
+
+# Simple Install Dependencies ( Windows )
+```cmd
+> install.bat
 ```
 
 # RUN 
@@ -47,11 +52,11 @@ Install these packages
 | npm start |✅|
 
 # CLOSE BOT
-```bash
+```cmd
 ctrl + c
 ```
 # RUN BACK
-```bash
+```cmd
 > cd selfbotz
 > node main
 ```
