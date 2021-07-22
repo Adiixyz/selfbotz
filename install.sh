@@ -6,6 +6,7 @@ apt-get install nodejs
 apt-get install libwebp
 apt-get install mc
 apt-get install ffmpeg
+apt-get install neofetch
 apt-get install wget
 apt-get install tesseract
 apt-get install nmap
