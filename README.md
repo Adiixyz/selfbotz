@@ -1,12 +1,9 @@
 <p align="center">
-<img src="https://media.giphy.com/media/4dM1U76aAQ3dbE6bc3/giphy.gif" alt="GIF" width="128" height="128"/>
-</p>
-<p align="center">
 <a href="#"><img title="selfbotz" 
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
-# SC SELFBOT NO APIKEY ( maybe ) :v
+## This project is not maintained after `1 August 2021` ( no update )
 
 # PREFIX 
 `#` and `.`
@@ -140,7 +137,7 @@ ctrl + c
 | TERM |✅|
 | > (EVAL) |✅|
 
-# THANKS TO
+# THANKS lord
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`MhankBarBar`](https://github.com/MhankBarBar)
+* [`Hexagonz`](https://github.com/Hexagonz)
 
