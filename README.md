@@ -3,8 +3,6 @@
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
-## This project is not maintained after `1 August 2021` ( no update )
-
 # PREFIX 
 `#` and `.`
 
