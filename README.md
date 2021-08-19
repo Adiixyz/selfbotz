@@ -36,6 +36,7 @@ Install these packages
 'fake': 'Selfbot by Adii'
 }
 ```
+# edit woy
 `prefix` : Prefix for use command
 `self` : To make public or self
 `trgetpc` : Target private chat
