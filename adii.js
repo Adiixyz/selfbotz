@@ -1,6 +1,7 @@
-// makasih tod
+// MAKASIH YG DAH PAKE
+// GAK SUB CHANNEL GW = ERROR
 
-
+//======[PACKAGE NPM]======//
 const
 	{
 		WAConnection,
@@ -43,6 +44,8 @@ const yts = require( 'yt-search')
 const ms = require('parse-ms')
 const toMs = require('ms')
 const { error } = require("qrcode-terminal")
+
+//======[GATAU INI APA:V]======//
 const { getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { color, bgcolor } = require('./lib/color')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetcher')
@@ -52,14 +55,19 @@ const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const afk = JSON.parse(fs.readFileSync('./lib/off.json'))
 const { sleep, isAfk, cekafk, addafk } = require('./lib/offline')
 
-banChats = true
+//[SETTINGS ( edit di settings/setting.json )]
+const setting = require('./settings/setting.json')
+
+prefix = setting.prefix
+banChats = setting.self
+targetpc = setting.trgetpc
+owner = setting.owner
+fake = setting.fake
 offline = false
-targetpc = '60199782326'
-owner = '60199782326'
-fake = 'fck this shit im out:v'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
+
 //=================================================//
 module.exports = adii = async (adii, mek) => {
 	try {
@@ -78,7 +86,7 @@ module.exports = adii = async (adii, mek) => {
                 const wit = moment.tz('Asia/Pontianak').format('HH:mm:ss')
                 const type = Object.keys(mek.message)[0]        
                 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
-                const prefix = /^[#.]/.test(cmd) ? cmd.match(/^[#.]/gi) : '-'          	
+                const prefix = /^[${prefix}]/.test(cmd) ? cmd.match(/^[#.]/gi) : '-'          	
         	body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 		budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 		const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()		
@@ -89,8 +97,8 @@ module.exports = adii = async (adii, mek) => {
 		const botNumberss = adii.user.jid + '@c.us'
 		const isGroup = from.endsWith('@g.us')
 		let sender = isGroup ? mek.participant : mek.key.remoteJid
-		// const isSelfNumber = config.NomorSELF
-		// const isOwner = sender.id === isSelfNumber
+		const isSelfNumber = setting.selfnum
+		const isOwner = sender.id === isSelfNumber
 		const totalchat = await adii.chats.all()
 		const groupMetadata = isGroup ? await adii.groupMetadata(from) : ''
 		const groupName = isGroup ? groupMetadata.subject : ''
@@ -115,7 +123,8 @@ module.exports = adii = async (adii, mek) => {
 				Iv: 'well.. the link error:v'
 			},
 			only: {
-				group: '『 w r o n g 』 this feature can be used in group chat',
+				group: 'this feature can be used in group chat',
+                                owner: 'this feature can be used by owner',
 			}
 		}
 		const isUrl = (url) => {
@@ -267,7 +276,6 @@ module.exports = adii = async (adii, mek) => {
         }
       }
     }
-//Commands//
 		colors = ['red', 'white', 'black', 'blue', 'yellow', 'green']
 		const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 		const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
@@ -385,7 +393,7 @@ Terminal : com.termux
 ► _>_ <code>
 
 *_Sc? Cari sendiri stah_*`
-        	fakestatus(menu)
+        	fakegroup(menu)
            	break
     case 'on':
             if (!mek.key.fromMe) return 
