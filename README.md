@@ -37,12 +37,12 @@ Install these packages
 }
 ```
 # edit woy
-`prefix` : Prefix for use command
-`self` : To make public or self
-`trgetpc` : Target private chat
-`selfnum` : Number to be self
-`owner` : Owner Number
-`fake` : Fake Text
+* `prefix` : Prefix for use command
+* `self` : To make public or self
+* `trgetpc` : Target private chat
+* `selfnum` : Number to be self
+* `owner` : Owner Number
+* `fake` : Fake Text
 
 # FEATURES
 
