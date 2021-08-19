@@ -86,7 +86,7 @@ module.exports = adii = async (adii, mek) => {
                 const wit = moment.tz('Asia/Pontianak').format('HH:mm:ss')
                 const type = Object.keys(mek.message)[0]        
                 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
-                const prefix = /^[${prefix}]/.test(cmd) ? cmd.match(/^[#.]/gi) : '-'          	
+                const prefix = /^[${prefix}]/.test(cmd) ? cmd.match(/^[${prefix}]/gi) : '-'          	
         	body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 		budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 		const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()		
@@ -293,18 +293,14 @@ switch (command) {
     case 'help':
     case 'm':
     case 'h':
-    	var menu = `〔 ${banChats ? '*SELF-BOT*' : '*PUBLIC-BOT*'} *Whatsapp* 〕
-    	
-Your UserName : ${pushname}
+    	var menu = `
+Hi, ${pushname}
 
-Prefix : ${prefix}
-
-「 _T i m e_ 」
 WIB : ${time}
 WITA : ${Makassar}
 Date : ${date}
 
-Terminal : com.termux
+Github : https://github.com/Adiixyz/selfbotz
 
 *_MODE_* : ${banChats ? '*SELF-MODE*' : '*PUBLIC-MODE*'}
 
@@ -319,6 +315,8 @@ Terminal : com.termux
 ► _${prefix}off_
 ► _${prefix}on_
 ► _${prefix}status_
+► _${prefix}self_
+► _${prefix}public_
 
 *❒ MAKER*
 ► _${prefix}sticker_
@@ -375,8 +373,6 @@ Terminal : com.termux
 ► _${prefix}anime_ <random>
 
 *❒ OTHER*
-► _${prefix}self_
-► _${prefix}public_
 ► _${prefix}setthumb_
 ► _${prefix}settarget_
 ► _${prefix}setfakeimg_
@@ -392,8 +388,7 @@ Terminal : com.termux
 ► _${prefix}get_
 ► _${prefix}term_ <code>
 ► _>_ <code>
-
-*_Sc? Cari sendiri stah_*`
+`
         	fakegroup(menu)
            	break
     case 'on':
@@ -768,15 +763,15 @@ Terminal : com.termux
     		adii.sendMessage(from, mat, MessageType.extendedText, anu)
             break
     case 'public':
-          	if (!mek.key.fromMe) return fakestatus('SELF-BOT')
-          	if (banChats === false) return
+          	if (!mek.key.fromMe) return fakestatus('ente owner?')
+          	if (banChats === false) return reply ('dh public todd')
           	// var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
           	banChats = false
           	fakestatus(`「 *PUBLIC-MODE* 」`)
           	break
 	case 'self':
-          	if (!mek.key.fromMe) return fakestatus('SELF-BOT')
-          	if (banChats === true) return
+          	if (!mek.key.fromMe) return fakestatus('ente owner kah')
+          	if (banChats === true) return fakegroup('udh self om')
           	uptime = process.uptime()
          	 // var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
          	banChats = true
@@ -1103,7 +1098,7 @@ Terminal : com.termux
 	case 'term':
 			if (!q) return fakegroup(mess.wrongFormat)
 			exec(q, (err, stdout) => {
-			if (err) return fakegroup(`SELF-BOT:~ ${err}`)
+			if (err) return fakegroup(`root@SELF-BOT:~ ${err}`)
 			if (stdout) {
 			fakegroup(stdout)
 			}
@@ -1145,7 +1140,7 @@ Terminal : com.termux
 			const latensi = speed() - timestamp
 			exec(`neofetch --stdout`, (error, stdout, stderr) => {
 			const child = stdout.toString('utf-8')
-			const teks = child.replace(/Memory:/, "Ram:")
+			const teks = child.replace(/Memory:/, "RAM:")
 			const pingnya = `*${teks}**Speed: ${latensi.toFixed(4)} Second*`
 			fakegroup(pingnya)
 			})
