@@ -315,6 +315,7 @@ Terminal : com.termux
 ► _${prefix}h_
 
 *❒ OWNER*
+► _${prefix}restart_
 ► _${prefix}off_
 ► _${prefix}on_
 ► _${prefix}status_
@@ -1149,6 +1150,23 @@ Terminal : com.termux
 			fakegroup(pingnya)
 			})
 			break  
+    case 'restart':
+if (!mek.key.fromMe) return reply('*Ente owner?_*')
+reply('_Restarting BOT_')
+exec(`node main.js`)
+setTimeout( () => {
+					adii.sendMessage(from, '_1_', text) // ur cods
+					}, 3000) // 1000 = 1s,
+					setTimeout( () => {
+					adii.sendMessage(from, '_2_', text) // ur cods
+					}, 2000) // 1000 = 1s,
+					setTimeout( () => {
+					adii.sendMessage(from, '_3_', text) // ur cods
+					}, 1000) // 1000 = 1s,
+					setTimeout( () => {
+					adii.sendMessage(from, `_Succses Restart BOT_`,text,{quoted: fkontak }) // ur cods
+					},4000) // 1000 = 1s,
+break
     case 'totag':
             if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
             encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
