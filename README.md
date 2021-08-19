@@ -32,12 +32,12 @@ Install these packages
 ## Edit required value in `setting.json` at `settings` folder
 ```json
 {
-'prefix': '.',
-'self': 'true',
-'trgetpc': '60199782326',
-'selfnum': '60199782326',
-'owner': '60199782326',
-'fake': 'Selfbot by Adii'
+ "prefix": ".",
+ "self": "true",
+ "trgetpc": "60199782326",
+ "selfnum": "60199782326",
+ "owner": "60199782326",
+ "fake": "Selfbot by Adii"
 }
 ```
 # edit woy
