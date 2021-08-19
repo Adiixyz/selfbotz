@@ -3,9 +3,6 @@
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
-# PREFIX 
-`#` and `.`
-
 # INSTALLATION ( TERMUX )
 ```cmd
 > pkg install git -y
@@ -15,8 +12,6 @@ src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e4
 > cd selfbotz
 > bash install.sh
 ```
-Note : Use `apt`  if `pkg` doesn't work
-
 
 # INSTALLATION ( WINDWOS, RDP, VPS )
 Install these packages
@@ -30,28 +25,23 @@ Install these packages
 > npm i
 ```
 
-# Simple Install Packages ( Windows only )
-Run `install.bat`
-Atau ketik di cmd
-```cmd
-> install.bat
+## Edit required value in `setting.json` at `settings` folder
+```json
+{
+'prefix': '.',
+'self': 'true',
+'trgetpc': '60199782326',
+'selfnum': '60199782326',
+'owner': '60199782326',
+'fake': 'Selfbot by Adii'
+}
 ```
-
-# RUN 
-| TERMUX DAN WINDWOS |✓|
-| ------------- | ------------- |
-| node main.js |✅|
-| npm start |✅|
-
-# CLOSE BOT
-```cmd
-ctrl + c
-```
-# RUN BACK
-```cmd
-> cd selfbotz
-> node main
-```
+`prefix` : Prefix for use command
+`self` : To make public or self
+`trgetpc` : Target private chat
+`selfnum` : Number to be self
+`owner` : Owner Number
+`fake` : Fake Text
 
 # FEATURES
 
@@ -137,5 +127,5 @@ ctrl + c
 
 # THANKS lord
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`Hexagonz`](https://github.com/Hexagonz)
+* [`MhankBarBar`](https://github.com/Mhankbarbar)
 
