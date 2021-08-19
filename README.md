@@ -7,6 +7,9 @@
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
+#### My Stats
+<p align="center"><a href="https://github.com/Adiixyz"><img src="https://github-readme-stats.vercel.app/api?username=Adiixyz&show_icons=true&theme=radical"></a></p>
+
 # INSTALLATION ( TERMUX )
 ```cmd
 > pkg install git -y
