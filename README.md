@@ -1,3 +1,7 @@
+# selfbot whatsapp
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Adiixyz/selfbotz)
+
 <p align="center">
 <a href="#"><img title="selfbotz" 
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
