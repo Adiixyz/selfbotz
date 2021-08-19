@@ -21,10 +21,10 @@ const starts = async (adii = new WAConnection()) => {
 
     fs.existsSync('./Adii.json') && adii.loadAuthInfo('./Adii.json')
     adii.on('connecting', () => {
-        start('2', 'Not connected...')
+        start('2', '2..')
     })
     adii.on('open', () => {
-        success('2', 'Connected to BOT WEA')
+        success('2', '2..')
     })
     await adii.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./Adii.json', JSON.stringify(adii.base64EncodedAuthInfo(), null, '\t'))
@@ -40,7 +40,7 @@ const starts = async (adii = new WAConnection()) => {
  * @param {function} cb <optional> 
  */
 function nocache(module, cb = () => { }) {
-    console.log('Module', `'${module}'`, 'is now being watched for changes')
+    console.log('Module', `'${module}'`, 'Telah dipantau oleh kang bakso wkwk')
     fs.watchFile(require.resolve(module), async () => {
         await uncache(require.resolve(module))
         cb(module)
