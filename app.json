@@ -1,0 +1,11 @@
+{
+  "name": "Adii~Chan",
+  "description": "Selfbot Whatsapp",
+  "repository": "https://github.com/Adiixyz/selfbotz",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": [
+    "selfbot",
+    "whatsapp",
+    "whatsapp-bot"
+  ]
+}
