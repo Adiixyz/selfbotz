@@ -60,7 +60,6 @@ const { jadibot, stopjadibot, listjadibot } = require('./lib/jadibot')
 //[SETTINGS ( edit di settings/setting.json )]
 const setting = require('./settings/setting.json')
 
-prefix = setting.prefix
 banChats = true
 targetpc = setting.trgetpc
 owner = setting.owner
@@ -94,7 +93,7 @@ module.exports = adii = async (adii, mek) => {
                 const Jayapura = moment.tz('Asia/Jayapura').format('HH:mm:ss')
                 const type = Object.keys(mek.message)[0]        
                 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
-                const prefix = /^[${prefix}]/.test(cmd) ? cmd.match(/^[${prefix}]/gi) : '-'          	
+                const prefix = /^[.#]/.test(cmd) ? cmd.match(/^[.#]/gi) : '-'          	
         	body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 		budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 		const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()		
