@@ -4,6 +4,10 @@
 #### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Adiixyz/selfbotz)
 
+#### Run On Repl.It
+[![Run on Repl.It](https://repl.it/badge/github/Adiixyz/selfbotz)](https://repl.it/github/Adiixyz/selfbotz)
+
+### hm
 <p align="center">
 <a href="#"><img title="selfbotz" 
 src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
