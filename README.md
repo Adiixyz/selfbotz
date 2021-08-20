@@ -1,4 +1,6 @@
-[selfbotz](./pics/IMG-20210820-WA0170.jpg)
+<p align="center">
+	<img src="./pics/IMG-20210820-WA0170.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+</p>
 <h1 align="center">SelfBot Whatsapp</h1>
 <a href="https://github.com/Adiixyz"><img title="Createdby" src="https://img.shields.io/badge/Created-Adii-black?style=for-the-badge&logo=github"></a>
 </p>
