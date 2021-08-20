@@ -59,7 +59,7 @@ const { sleep, isAfk, cekafk, addafk } = require('./lib/offline')
 const setting = require('./settings/setting.json')
 
 prefix = setting.prefix
-banChats = setting.self
+banChats = true
 targetpc = setting.trgetpc
 owner = setting.owner
 fake = setting.fake
@@ -67,6 +67,12 @@ offline = false
 numbernye = '0'
 waktu = '-'
 alasan = '-'
+
+vcard2 = 'BEGIN:VCARD\n'
+         + 'VERSION:3.0\n'
+         + `FN:Adii\n`
+         + `TEL;type=CELL;type=VOICE;waid=60199782326:+60199782326\n`
+         + 'END:VCARD'
 
 //=================================================//
 module.exports = adii = async (adii, mek) => {
@@ -83,7 +89,7 @@ module.exports = adii = async (adii, mek) => {
 		const time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
                 const date = moment.tz('Asia/Jakarta').format('DD/MM/YY')
                 const Makassar = moment.tz('Asia/Makassar').format('HH:mm:ss')
-                const wit = moment.tz('Asia/Pontianak').format('HH:mm:ss')
+                const Jayapura = moment.tz('Asia/Jayapura').format('HH:mm:ss')
                 const type = Object.keys(mek.message)[0]        
                 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
                 const prefix = /^[${prefix}]/.test(cmd) ? cmd.match(/^[${prefix}]/gi) : '-'          	
@@ -97,8 +103,8 @@ module.exports = adii = async (adii, mek) => {
 		const botNumberss = adii.user.jid + '@c.us'
 		const isGroup = from.endsWith('@g.us')
 		let sender = isGroup ? mek.participant : mek.key.remoteJid
-		const isSelfNumber = setting.selfnum
-		const isOwner = sender.id === isSelfNumber
+		// const isSelfNumber = setting.selfnum
+		// const isOwner = sender.id === isSelfNumber
 		const totalchat = await adii.chats.all()
 		const groupMetadata = isGroup ? await adii.groupMetadata(from) : ''
 		const groupName = isGroup ? groupMetadata.subject : ''
@@ -298,6 +304,7 @@ Hi, ${pushname}
 
 WIB : ${time}
 WITA : ${Makassar}
+WIT : ${Jayapura}
 Date : ${date}
 
 Github : https://github.com/Adiixyz/selfbotz
@@ -317,6 +324,8 @@ Github : https://github.com/Adiixyz/selfbotz
 ► _${prefix}status_
 ► _${prefix}self_
 ► _${prefix}public_
+► _${prefix}term_ <cmd code>
+► _>_ <JavaScript code>
 
 *❒ MAKER*
 ► _${prefix}sticker_
@@ -386,8 +395,6 @@ Github : https://github.com/Adiixyz/selfbotz
 ► _${prefix}inspect_
 ► _${prefix}join_
 ► _${prefix}get_
-► _${prefix}term_ <code>
-► _>_ <code>
 `
         	fakegroup(menu)
            	break
@@ -413,6 +420,9 @@ Github : https://github.com/Adiixyz/selfbotz
             .then(bu =>{
             fakestatus(bu)
             })   
+            break
+    case 'owner':
+            adii.sendMessage(from, {displayName: `Adii`, vcard2: vcard2}, contact)
             break
     case 'kontag':
             if (!mek.key.fromMe) return reply('SELF-BOT')
