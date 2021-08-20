@@ -54,6 +54,8 @@ const { webp2mp4File} = require('./lib/webp2mp4')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const afk = JSON.parse(fs.readFileSync('./lib/off.json'))
 const { sleep, isAfk, cekafk, addafk } = require('./lib/offline')
+const { jadibot, stopjadibot, listjadibot } = require('./lib/jadibot')
+
 
 //[SETTINGS ( edit di settings/setting.json )]
 const setting = require('./settings/setting.json')
@@ -327,6 +329,11 @@ Github : https://github.com/Adiixyz/selfbotz
 ► _${prefix}term_ <cmd code>
 ► _>_ <JavaScript code>
 
+*❒ JADIBOT*
+► _${prefix}jadibot_
+► _${prefix}stopjadibot_
+► _${prefix}listjadibot_
+
 *❒ MAKER*
 ► _${prefix}sticker_
 ► _${prefix}s_
@@ -421,6 +428,24 @@ Github : https://github.com/Adiixyz/selfbotz
             fakestatus(bu)
             })   
             break
+   case 'jadibot':
+    if (mek.key.fromMe) return reply('Tidak bisa jadibot di dalam bot')
+    jadibot(reply,adii,from)
+    break
+    case 'stopjadibot':
+    if (mek.key.fromMe)return reply('tidak bisa stopjadibot kecuali owner')
+    stopjadibot(reply)
+    break
+    case 'listbot':
+    let tekss = '「 *LIST JADIBOT* 」\n'
+    for(let i of listjadibot) {
+    tekss += `*Nomor* : ${i.jid.split('@')[0]}
+*Nama* : ${i.name}
+*Device* : ${i.phone.device_manufacturer}
+*Model* : ${i.phone.device_model}\n\n`
+    }
+    reply(tekss)
+    break
     case 'owner':
             adii.sendMessage(from, {displayName: `Adii`, vcard2: vcard2}, contact)
             break
