@@ -55,9 +55,15 @@ Install these packages
 
 | OWNER |YES?|
 | ------------- | ------------- |
+| RESTART |✅|
 | OFF |✅|
 | ON |✅|
 | STATUS |✅|
+| TERM |✅|
+| > (EVAL) |✅|
+| SELF |✅|
+| PUBLIC |✅|
+| VIRTEX |in making|
 
 | MAKER |YES?|
 | ------------- | ------------- |
@@ -116,8 +122,6 @@ Install these packages
 
 | OTHER |YES?|
 | ------------- | ------------- |
-| SELF |✅|
-| PUBLIC |✅|
 | SET THUMB |✅|
 | SET FAKE IMG |✅|
 | SET TARGET |✅|
@@ -130,8 +134,6 @@ Install these packages
 | INSPECT |✅|
 | JOIN |✅|
 | GET |✅|
-| TERM |✅|
-| > (EVAL) |✅|
 
 # THANKS lord
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
