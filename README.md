@@ -1,8 +1,16 @@
 <h1 align="center">SelfBot Whatsapp</h1>
-<h1 align="center">Created By My Yourself</h1>
+<a href="https://github.com/Adiixyz"><img title="hmm" src="https://img.shields.io/badge/Created-by-Adii-black?style=for-the-badge&logo=github"></a>
+</p>
 
 #### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Adiixyz/selfbotz)
+
+#### Heroku Buildpack
+| BuildPack | LINK |
+|--------|--------|
+| **FFMPEG** |[nih](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **WEBP** | [nih](https://github.com/clhuang/heroku-buildpack-webp-binaries) |
+| **IMAGEMAGICK** | [nih](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
 #### Run On Repl.It
 [![Run on Repl.It](https://repl.it/badge/github/Adiixyz/selfbotz)](https://repl.it/github/Adiixyz/selfbotz)
