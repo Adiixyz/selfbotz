@@ -1,5 +1,5 @@
 <h1 align="center">SelfBot Whatsapp</h1>
-<a href="https://github.com/Adiixyz"><img title="hmm" src="https://img.shields.io/badge/Created-by-Adii-black?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/Adiixyz"><img title="hmm" src="https://img.shields.io/badge/Created-by-Adii-black?style=for-the-badge&logo=linux"></a>
 </p>
 
 #### Deploy to Heroku
