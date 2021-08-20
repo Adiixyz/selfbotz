@@ -6,6 +6,12 @@
 
 #### Run On Repl.It
 [![Run on Repl.It](https://repl.it/badge/github/Adiixyz/selfbotz)](https://repl.it/github/Adiixyz/selfbotz)
+```
+Type this on console
+
+> npm install
+```
+Then click run
 
 ### hm
 <p align="center">
