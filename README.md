@@ -16,7 +16,7 @@ Then click run
 ### hm
 <p align="center">
 <a href="#"><img title="selfbotz" 
-src="https://img.shields.io/badge/Adiixyz-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+src="https://img.shields.io/badge/SELFBOTZ-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
 #### My Stats
@@ -76,6 +76,12 @@ Install these packages
 | SELF |✅|
 | PUBLIC |✅|
 | VIRTEX |in making|
+
+| JADIBOT |NEW!!!|
+| ------------- | ------------- |
+| JADIBOT |✅|
+| STOPJADIBOT |✅|
+| LISTJADIBOT |✅|
 
 | MAKER |YES?|
 | ------------- | ------------- |
